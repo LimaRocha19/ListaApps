@@ -15,6 +15,12 @@
 		E46610941A9E11BF00C0C79E /* ListaAppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E46610931A9E11BF00C0C79E /* ListaAppsTests.m */; };
 		E46610A21A9E129500C0C79E /* ListaAppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E46610A11A9E129500C0C79E /* ListaAppTableViewCell.m */; };
 		E46610A51A9E12B600C0C79E /* ListaAppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46610A41A9E12B600C0C79E /* ListaAppTableViewController.m */; };
+		ECE2EEC51A9E264200D514CD /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEBF1A9E264200D514CD /* Facebook.png */; };
+		ECE2EEC61A9E264200D514CD /* Whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEC01A9E264200D514CD /* Whatsapp.png */; };
+		ECE2EEC71A9E264200D514CD /* Waze.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEC11A9E264200D514CD /* Waze.png */; };
+		ECE2EEC81A9E264200D514CD /* Google_maps.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEC21A9E264200D514CD /* Google_maps.png */; };
+		ECE2EEC91A9E264200D514CD /* eBay.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEC31A9E264200D514CD /* eBay.png */; };
+		ECE2EECA1A9E264200D514CD /* Ingresso.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEC41A9E264200D514CD /* Ingresso.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		E46610A11A9E129500C0C79E /* ListaAppTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaAppTableViewCell.m; sourceTree = "<group>"; };
 		E46610A31A9E12B600C0C79E /* ListaAppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaAppTableViewController.h; sourceTree = "<group>"; };
 		E46610A41A9E12B600C0C79E /* ListaAppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaAppTableViewController.m; sourceTree = "<group>"; };
+		ECE2EEBF1A9E264200D514CD /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Facebook.png; path = ../../../../Downloads/Facebook.png; sourceTree = "<group>"; };
+		ECE2EEC01A9E264200D514CD /* Whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Whatsapp.png; path = ../../../../Downloads/Whatsapp.png; sourceTree = "<group>"; };
+		ECE2EEC11A9E264200D514CD /* Waze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Waze.png; path = ../../../../Downloads/Waze.png; sourceTree = "<group>"; };
+		ECE2EEC21A9E264200D514CD /* Google_maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Google_maps.png; path = ../../../../Downloads/Google_maps.png; sourceTree = "<group>"; };
+		ECE2EEC31A9E264200D514CD /* eBay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eBay.png; path = ../../../../Downloads/eBay.png; sourceTree = "<group>"; };
+		ECE2EEC41A9E264200D514CD /* Ingresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ingresso.png; path = ../../../../Downloads/Ingresso.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				E466107B1A9E11BF00C0C79E /* AppDelegate.h */,
+				ECE2EEBF1A9E264200D514CD /* Facebook.png */,
+				ECE2EEC01A9E264200D514CD /* Whatsapp.png */,
+				ECE2EEC11A9E264200D514CD /* Waze.png */,
+				ECE2EEC21A9E264200D514CD /* Google_maps.png */,
+				ECE2EEC31A9E264200D514CD /* eBay.png */,
+				ECE2EEC41A9E264200D514CD /* Ingresso.png */,
 				E466107C1A9E11BF00C0C79E /* AppDelegate.m */,
 				E46610811A9E11BF00C0C79E /* Main.storyboard */,
 				E46610841A9E11BF00C0C79E /* Images.xcassets */,
@@ -204,9 +222,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE2EEC71A9E264200D514CD /* Waze.png in Resources */,
 				E46610831A9E11BF00C0C79E /* Main.storyboard in Resources */,
+				ECE2EEC81A9E264200D514CD /* Google_maps.png in Resources */,
+				ECE2EEC51A9E264200D514CD /* Facebook.png in Resources */,
+				ECE2EEC91A9E264200D514CD /* eBay.png in Resources */,
 				E46610881A9E11BF00C0C79E /* LaunchScreen.xib in Resources */,
+				ECE2EEC61A9E264200D514CD /* Whatsapp.png in Resources */,
 				E46610851A9E11BF00C0C79E /* Images.xcassets in Resources */,
+				ECE2EECA1A9E264200D514CD /* Ingresso.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +444,7 @@
 				E46610991A9E11BF00C0C79E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E466109A1A9E11BF00C0C79E /* Build configuration list for PBXNativeTarget "ListaAppsTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +453,7 @@
 				E466109C1A9E11BF00C0C79E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    nomeApps = [[NSMutableArray alloc]init];
+    categoriaApps = [[NSMutableArray alloc]init];
+    imagemApps = [[NSMutableArray alloc]init];
     
     [nomeApps addObject:@"Waze"];
     [nomeApps addObject:@"Google maps"];
@@ -33,12 +36,12 @@
     [categoriaApps addObject:@"Negócios"];
     [categoriaApps addObject:@"Negócios"];
     
-    [imagemApps addObject:@"Waze.jpg"];
-    [imagemApps addObject:@"Google_maps.jpg"];
-    [imagemApps addObject:@"Facebook.jpg"];
-    [imagemApps addObject:@"Whatsapp.jpg"];
-    [imagemApps addObject:@"eBay.jpg"];
-    [imagemApps addObject:@"Ingresso.jpg"];
+    [imagemApps addObject:@"Waze"];
+    [imagemApps addObject:@"Google_maps"];
+    [imagemApps addObject:@"Facebook"];
+    [imagemApps addObject:@"Whatsapp"];
+    [imagemApps addObject:@"eBay"];
+    [imagemApps addObject:@"Ingresso"];
     
 }
 
@@ -63,11 +66,19 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
     ListaAppTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"appDetail" forIndexPath:indexPath];
+    
+    if(cell == nil){
+        cell = [[ListaAppTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:@"appDetail"];
+     }
     
     NSString *app = [nomeApps objectAtIndex:[indexPath row]];
     NSString *categoria = [categoriaApps objectAtIndex:[indexPath row]];
     NSString *imagem = [imagemApps objectAtIndex:[indexPath row]];
+
+
     
     [[cell nomeApp] setText:app];
     [[cell categoriaApp] setText:categoria];

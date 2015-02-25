@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListaAppTableViewController : UITableViewController
+@interface ListaAppTableViewController : UITableViewController <UITableViewDataSource>
 
-@property (weak, nonatomic) NSMutableArray *nomeApps;
-@property (weak, nonatomic) NSMutableArray *categoriaApps;
-@property (weak, nonatomic) NSMutableArray *imagemApps;
+@property NSMutableArray *nomeApps;
+@property NSMutableArray *categoriaApps;
+@property NSMutableArray *imagemApps;
 
 
 @end
