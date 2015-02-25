@@ -10,4 +10,9 @@
 
 @interface ListaAppTableViewController : UITableViewController
 
+@property (weak, nonatomic) NSMutableArray *nomeApps;
+@property (weak, nonatomic) NSMutableArray *categoriaApps;
+@property (weak, nonatomic) NSMutableArray *imagemApps;
+
+
 @end
