@@ -10,9 +10,6 @@
 
 @interface ListaAppTableViewController : UITableViewController <UITableViewDataSource>
 
-@property NSMutableArray *nomeApps;
-@property NSMutableArray *categoriaApps;
-@property NSMutableArray *imagemApps;
 
 
 @end
