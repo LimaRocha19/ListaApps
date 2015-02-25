@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ListaAppTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIView *imageApp;
-@property (weak, nonatomic) IBOutlet UIView *nomeApp;
-@property (weak, nonatomic) IBOutlet UIView *categoriaApp;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageApp;
+
+@property (weak, nonatomic) IBOutlet UILabel *nomeApp;
+@property (weak, nonatomic) IBOutlet UILabel *categoriaApp;
 
 @end

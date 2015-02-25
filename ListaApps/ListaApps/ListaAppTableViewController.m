@@ -7,6 +7,7 @@
 //
 
 #import "ListaAppTableViewController.h"
+#import "ListaAppTableViewCell.h"
 
 @interface ListaAppTableViewController ()
 
@@ -26,9 +27,18 @@
     [nomeApps addObject:@"Ingresso"];
     
     [categoriaApps addObject:@"Navegação"];
+    [categoriaApps addObject:@"Navegação"];
+    [categoriaApps addObject:@"Social"];
     [categoriaApps addObject:@"Social"];
     [categoriaApps addObject:@"Negócios"];
+    [categoriaApps addObject:@"Negócios"];
     
+    [imagemApps addObject:@"Waze.jpg"];
+    [imagemApps addObject:@"Google_maps.jpg"];
+    [imagemApps addObject:@"Facebook.jpg"];
+    [imagemApps addObject:@"Whatsapp.jpg"];
+    [imagemApps addObject:@"eBay.jpg"];
+    [imagemApps addObject:@"Ingresso.jpg"];
     
 }
 
@@ -53,9 +63,15 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"appDetail" forIndexPath:indexPath];
+    ListaAppTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"appDetail" forIndexPath:indexPath];
     
+    NSString *app = [nomeApps objectAtIndex:[indexPath row]];
+    NSString *categoria = [categoriaApps objectAtIndex:[indexPath row]];
+    NSString *imagem = [imagemApps objectAtIndex:[indexPath row]];
     
+    [[cell nomeApp] setText:app];
+    [[cell categoriaApp] setText:categoria];
+    [[cell imageApp] setImage:[UIImage imageNamed:imagem]];
     
     return cell;
 }

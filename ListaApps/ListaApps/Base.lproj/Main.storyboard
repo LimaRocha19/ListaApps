@@ -36,9 +36,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="categoriaApp" destination="Nif-2G-dLQ" id="3Ei-lf-uPj"/>
-                                    <outlet property="imageApp" destination="Nif-2G-dLQ" id="7lM-rd-HTX"/>
-                                    <outlet property="nomeApp" destination="Nif-2G-dLQ" id="jhK-wl-iKZ"/>
+                                    <outlet property="categoriaApp" destination="OHQ-ZJ-knW" id="4tM-yr-CvY"/>
+                                    <outlet property="imageApp" destination="qdn-0t-N1b" id="Wph-6e-KCi"/>
+                                    <outlet property="nomeApp" destination="XIn-cL-Gia" id="JOe-Ix-6j7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
