@@ -22,6 +22,8 @@
 		ECE2EED51A9E32B400D514CD /* Waze.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EECF1A9E32B400D514CD /* Waze.png */; };
 		ECE2EED61A9E32B400D514CD /* Whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EED01A9E32B400D514CD /* Whatsapp.png */; };
 		ECE2EED91A9E34AA00D514CD /* AppsData.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2EED81A9E34AA00D514CD /* AppsData.m */; };
+		ECE2EEDD1A9E476A00D514CD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEDC1A9E476A00D514CD /* Icon.png */; };
+		ECE2EEE31A9E504000D514CD /* SecondViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2EEE21A9E504000D514CD /* SecondViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		ECE2EED01A9E32B400D514CD /* Whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Whatsapp.png; path = Imagens/Whatsapp.png; sourceTree = SOURCE_ROOT; };
 		ECE2EED71A9E34AA00D514CD /* AppsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsData.h; path = ../AppsData.h; sourceTree = "<group>"; };
 		ECE2EED81A9E34AA00D514CD /* AppsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppsData.m; path = ../AppsData.m; sourceTree = "<group>"; };
+		ECE2EEDC1A9E476A00D514CD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Imagens/Icon.png; sourceTree = SOURCE_ROOT; };
+		ECE2EEE11A9E504000D514CD /* SecondViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewViewController.h; sourceTree = "<group>"; };
+		ECE2EEE21A9E504000D514CD /* SecondViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,8 @@
 				E46610A11A9E129500C0C79E /* ListaAppTableViewCell.m */,
 				E46610A31A9E12B600C0C79E /* ListaAppTableViewController.h */,
 				E46610A41A9E12B600C0C79E /* ListaAppTableViewController.m */,
+				ECE2EEE11A9E504000D514CD /* SecondViewViewController.h */,
+				ECE2EEE21A9E504000D514CD /* SecondViewViewController.m */,
 			);
 			path = ListaApps;
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 		E46610771A9E11BF00C0C79E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ECE2EEDC1A9E476A00D514CD /* Icon.png */,
 				E46610781A9E11BF00C0C79E /* Info.plist */,
 				E46610791A9E11BF00C0C79E /* main.m */,
 			);
@@ -231,6 +239,7 @@
 			files = (
 				ECE2EED41A9E32B400D514CD /* Ingresso.png in Resources */,
 				ECE2EED11A9E32B400D514CD /* eBay.png in Resources */,
+				ECE2EEDD1A9E476A00D514CD /* Icon.png in Resources */,
 				ECE2EED51A9E32B400D514CD /* Waze.png in Resources */,
 				ECE2EED21A9E32B400D514CD /* Facebook.png in Resources */,
 				E46610831A9E11BF00C0C79E /* Main.storyboard in Resources */,
@@ -256,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E466107D1A9E11BF00C0C79E /* AppDelegate.m in Sources */,
+				ECE2EEE31A9E504000D514CD /* SecondViewViewController.m in Sources */,
 				E46610A51A9E12B600C0C79E /* ListaAppTableViewController.m in Sources */,
 				ECE2EED91A9E34AA00D514CD /* AppsData.m in Sources */,
 				E466107A1A9E11BF00C0C79E /* main.m in Sources */,

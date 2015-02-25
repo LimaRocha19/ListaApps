@@ -9,6 +9,7 @@
 #import "ListaAppTableViewController.h"
 #import "ListaAppTableViewCell.h"
 #import "AppsData.h"
+#import "SecondViewViewController.h"
 
 @interface ListaAppTableViewController (){
     AppsData *dados;
@@ -45,19 +46,19 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     ListaAppTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"appDetail" forIndexPath:indexPath];
     
     if(cell == nil){
         cell = [[ListaAppTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:@"appDetail"];
-     }
+                                            reuseIdentifier:@"appDetail"];
+    }
     
     NSString *app = [dados.nomeApps objectAtIndex:[indexPath row]];
     NSString *categoria = [dados.categoriaApps objectAtIndex:[indexPath row]];
     NSString *imagem = [dados.imagemApps objectAtIndex:[indexPath row]];
-
-
+    
+    
     
     [[cell nomeApp] setText:app];
     [[cell categoriaApp] setText:categoria];
@@ -84,33 +85,51 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
 
+//// Override to support rearranging the table view.
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
 //
-//// Override to support conditional rearranging of the table view.
-//- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-//    // Return NO if you do not want the item to be re-orderable.
-//    
-//    return YES;
 //}
 
 
-/*
+
+
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the item to be re-orderable.
+    
+    return YES;
+}
+
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get reference to the destination view controller
+    if ([[segue identifier] isEqualToString:@"appDetalhes"])
+    {
+        SecondViewViewController *detailViewController =
+        [segue destinationViewController];
+        
+        NSIndexPath *myIndexPath = [self.tableView
+                                    indexPathForSelectedRow];
+        
+        detailViewController.appsDetail =
+        @[[dados.nomeApps objectAtIndex:[myIndexPath row]],
+          [dados.categoriaApps objectAtIndex:[myIndexPath row]],
+          [dados.imagemApps objectAtIndex:[myIndexPath row]],
+          [dados.descricaoApps objectAtIndex:[myIndexPath row]]];
+    }
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

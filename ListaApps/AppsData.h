@@ -13,11 +13,13 @@
      NSMutableArray *nomeApps;
      NSMutableArray *categoriaApps;
      NSMutableArray *imagemApps;
+     NSMutableArray *descricaoApps;
 
 }
 @property NSMutableArray *nomeApps;
 @property NSMutableArray *categoriaApps;
 @property NSMutableArray *imagemApps;
+@property NSMutableArray *descricaoApps;
 
 +(AppsData *) instance;
 -(id)init;
