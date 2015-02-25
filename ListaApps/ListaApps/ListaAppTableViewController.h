@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ListaAppTableViewController.h
 //  ListaApps
 //
 //  Created by Isaías Lima on 25/02/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ListaAppTableViewController : UITableViewController
 
 @end
-
