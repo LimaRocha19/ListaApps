@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EditViewController.h"
 
 @interface SecondViewViewController : UIViewController
 
@@ -15,6 +16,5 @@
 @property IBOutlet UILabel *categoria;
 @property IBOutlet UIImageView *imagem;
 @property IBOutlet UILabel *descricao;
-- (IBAction)voltar:(id)sender;
 
 @end

@@ -30,13 +30,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [dados.nomeApps count];
 }
@@ -137,7 +135,8 @@
         @[[dados.nomeApps objectAtIndex:[myIndexPath row]],
           [dados.categoriaApps objectAtIndex:[myIndexPath row]],
           [dados.imagemApps objectAtIndex:[myIndexPath row]],
-          [dados.descricaoApps objectAtIndex:[myIndexPath row]]];
+          [dados.descricaoApps objectAtIndex:[myIndexPath row]],
+          [NSNumber numberWithInteger:[myIndexPath row]]];
     }
     
     // Get the new view controller using [segue destinationViewController].
