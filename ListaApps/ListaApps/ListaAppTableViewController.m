@@ -7,9 +7,6 @@
 //
 
 #import "ListaAppTableViewController.h"
-#import "ListaAppTableViewCell.h"
-#import "AppsData.h"
-#import "SecondViewViewController.h"
 
 @interface ListaAppTableViewController (){
     AppsData *dados;
@@ -93,7 +90,22 @@
 
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-
+    NSString *nameToMove = [dados.nomeApps objectAtIndex:fromIndexPath.row];
+    NSString *categoryToMove = [dados.categoriaApps objectAtIndex:fromIndexPath.row];
+    NSString *descriptionToMove = [dados.descricaoApps objectAtIndex:fromIndexPath.row];
+    NSString *imageToMove = [dados.imagemApps objectAtIndex:fromIndexPath.row];
+    
+    [dados.nomeApps removeObjectAtIndex:fromIndexPath.row];
+    [dados.nomeApps insertObject:nameToMove atIndex:toIndexPath.row];
+    
+    [dados.categoriaApps removeObjectAtIndex:fromIndexPath.row];
+    [dados.categoriaApps insertObject:categoryToMove atIndex:toIndexPath.row];
+    
+    [dados.descricaoApps removeObjectAtIndex:fromIndexPath.row];
+    [dados.descricaoApps insertObject:descriptionToMove atIndex:toIndexPath.row];
+    
+    [dados.imagemApps removeObjectAtIndex:fromIndexPath.row];
+    [dados.imagemApps insertObject:imageToMove atIndex:toIndexPath.row];
 }
 
 

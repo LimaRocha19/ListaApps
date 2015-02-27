@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17F278FD1AA0912E00A01C21 /* Whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F278FC1AA0912E00A01C21 /* Whatsapp.png */; };
+		17F278FF1AA0923600A01C21 /* Waze.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F278FE1AA0923600A01C21 /* Waze.png */; };
 		E466107A1A9E11BF00C0C79E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E46610791A9E11BF00C0C79E /* main.m */; };
 		E466107D1A9E11BF00C0C79E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E466107C1A9E11BF00C0C79E /* AppDelegate.m */; };
 		E46610831A9E11BF00C0C79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46610811A9E11BF00C0C79E /* Main.storyboard */; };
@@ -19,8 +21,6 @@
 		ECE2EED21A9E32B400D514CD /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EECC1A9E32B400D514CD /* Facebook.png */; };
 		ECE2EED31A9E32B400D514CD /* Google_maps.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EECD1A9E32B400D514CD /* Google_maps.png */; };
 		ECE2EED41A9E32B400D514CD /* Ingresso.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EECE1A9E32B400D514CD /* Ingresso.png */; };
-		ECE2EED51A9E32B400D514CD /* Waze.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EECF1A9E32B400D514CD /* Waze.png */; };
-		ECE2EED61A9E32B400D514CD /* Whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EED01A9E32B400D514CD /* Whatsapp.png */; };
 		ECE2EED91A9E34AA00D514CD /* AppsData.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2EED81A9E34AA00D514CD /* AppsData.m */; };
 		ECE2EEDD1A9E476A00D514CD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE2EEDC1A9E476A00D514CD /* Icon.png */; };
 		ECE2EEE31A9E504000D514CD /* SecondViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2EEE21A9E504000D514CD /* SecondViewViewController.m */; };
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17F278FC1AA0912E00A01C21 /* Whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Whatsapp.png; path = Imagens/Whatsapp.png; sourceTree = SOURCE_ROOT; };
+		17F278FE1AA0923600A01C21 /* Waze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Waze.png; path = Imagens/Waze.png; sourceTree = SOURCE_ROOT; };
 		E46610741A9E11BF00C0C79E /* ListaApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46610781A9E11BF00C0C79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E46610791A9E11BF00C0C79E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,8 +58,6 @@
 		ECE2EECC1A9E32B400D514CD /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Facebook.png; path = Imagens/Facebook.png; sourceTree = SOURCE_ROOT; };
 		ECE2EECD1A9E32B400D514CD /* Google_maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Google_maps.png; path = Imagens/Google_maps.png; sourceTree = SOURCE_ROOT; };
 		ECE2EECE1A9E32B400D514CD /* Ingresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ingresso.png; path = Imagens/Ingresso.png; sourceTree = SOURCE_ROOT; };
-		ECE2EECF1A9E32B400D514CD /* Waze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Waze.png; path = Imagens/Waze.png; sourceTree = SOURCE_ROOT; };
-		ECE2EED01A9E32B400D514CD /* Whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Whatsapp.png; path = Imagens/Whatsapp.png; sourceTree = SOURCE_ROOT; };
 		ECE2EED71A9E34AA00D514CD /* AppsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppsData.h; path = ../AppsData.h; sourceTree = "<group>"; };
 		ECE2EED81A9E34AA00D514CD /* AppsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppsData.m; path = ../AppsData.m; sourceTree = "<group>"; };
 		ECE2EEDC1A9E476A00D514CD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Imagens/Icon.png; sourceTree = SOURCE_ROOT; };
@@ -83,6 +83,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1716B4241AA08A0D00A6FEDF /* imagens */ = {
+			isa = PBXGroup;
+			children = (
+				17F278FE1AA0923600A01C21 /* Waze.png */,
+				17F278FC1AA0912E00A01C21 /* Whatsapp.png */,
+				ECE2EECB1A9E32B400D514CD /* eBay.png */,
+				ECE2EECC1A9E32B400D514CD /* Facebook.png */,
+				ECE2EECD1A9E32B400D514CD /* Google_maps.png */,
+				ECE2EECE1A9E32B400D514CD /* Ingresso.png */,
+			);
+			name = imagens;
+			sourceTree = "<group>";
+		};
 		E466106B1A9E11BF00C0C79E = {
 			isa = PBXGroup;
 			children = (
@@ -106,24 +119,19 @@
 			children = (
 				ECE2EED71A9E34AA00D514CD /* AppsData.h */,
 				ECE2EED81A9E34AA00D514CD /* AppsData.m */,
-				ECE2EECB1A9E32B400D514CD /* eBay.png */,
-				ECE2EECC1A9E32B400D514CD /* Facebook.png */,
-				ECE2EECD1A9E32B400D514CD /* Google_maps.png */,
-				ECE2EECE1A9E32B400D514CD /* Ingresso.png */,
-				ECE2EECF1A9E32B400D514CD /* Waze.png */,
-				ECE2EED01A9E32B400D514CD /* Whatsapp.png */,
 				E466107B1A9E11BF00C0C79E /* AppDelegate.h */,
 				E466107C1A9E11BF00C0C79E /* AppDelegate.m */,
-				E46610811A9E11BF00C0C79E /* Main.storyboard */,
-				E46610841A9E11BF00C0C79E /* Images.xcassets */,
-				E46610861A9E11BF00C0C79E /* LaunchScreen.xib */,
-				E46610771A9E11BF00C0C79E /* Supporting Files */,
 				E46610A01A9E129500C0C79E /* ListaAppTableViewCell.h */,
 				E46610A11A9E129500C0C79E /* ListaAppTableViewCell.m */,
 				E46610A31A9E12B600C0C79E /* ListaAppTableViewController.h */,
 				E46610A41A9E12B600C0C79E /* ListaAppTableViewController.m */,
 				ECE2EEE11A9E504000D514CD /* SecondViewViewController.h */,
 				ECE2EEE21A9E504000D514CD /* SecondViewViewController.m */,
+				E46610811A9E11BF00C0C79E /* Main.storyboard */,
+				E46610841A9E11BF00C0C79E /* Images.xcassets */,
+				E46610861A9E11BF00C0C79E /* LaunchScreen.xib */,
+				1716B4241AA08A0D00A6FEDF /* imagens */,
+				E46610771A9E11BF00C0C79E /* Supporting Files */,
 			);
 			path = ListaApps;
 			sourceTree = "<group>";
@@ -204,11 +212,11 @@
 				TargetAttributes = {
 					E46610731A9E11BF00C0C79E = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = MKQLXGTSLW;
+						DevelopmentTeam = LNGFCK45YW;
 					};
 					E466108C1A9E11BF00C0C79E = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = MKQLXGTSLW;
+						DevelopmentTeam = LNGFCK45YW;
 						TestTargetID = E46610731A9E11BF00C0C79E;
 					};
 				};
@@ -239,11 +247,11 @@
 			files = (
 				ECE2EED41A9E32B400D514CD /* Ingresso.png in Resources */,
 				ECE2EED11A9E32B400D514CD /* eBay.png in Resources */,
+				17F278FF1AA0923600A01C21 /* Waze.png in Resources */,
+				17F278FD1AA0912E00A01C21 /* Whatsapp.png in Resources */,
 				ECE2EEDD1A9E476A00D514CD /* Icon.png in Resources */,
-				ECE2EED51A9E32B400D514CD /* Waze.png in Resources */,
 				ECE2EED21A9E32B400D514CD /* Facebook.png in Resources */,
 				E46610831A9E11BF00C0C79E /* Main.storyboard in Resources */,
-				ECE2EED61A9E32B400D514CD /* Whatsapp.png in Resources */,
 				ECE2EED31A9E32B400D514CD /* Google_maps.png in Resources */,
 				E46610881A9E11BF00C0C79E /* LaunchScreen.xib in Resources */,
 				E46610851A9E11BF00C0C79E /* Images.xcassets in Resources */,

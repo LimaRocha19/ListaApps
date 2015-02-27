@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ListaAppTableViewCell.h"
+#import "AppsData.h"
+#import "SecondViewViewController.h"
 
 @interface ListaAppTableViewController : UITableViewController <UITableViewDataSource>
 
