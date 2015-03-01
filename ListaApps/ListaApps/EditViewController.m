@@ -42,11 +42,11 @@
     [dados.categoriaApps replaceObjectAtIndex:[indice integerValue] withObject:[_categoriaApp text]];
     [dados.descricaoApps replaceObjectAtIndex:[indice integerValue] withObject:[_descricaoApp text]];
     
-    [_nomeApp resignFirstResponder];
-    [_categoriaApp resignFirstResponder];
-    [_descricaoApp resignFirstResponder];
+//    [_nomeApp resignFirstResponder];
+//    [_categoriaApp resignFirstResponder];
+//    [_descricaoApp resignFirstResponder];
     
-    //[self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
